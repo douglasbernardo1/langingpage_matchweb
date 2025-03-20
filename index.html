@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="icon" href="faviconmatriz.png" type="image/x-icon">
+  <style>
+      /* Estilo para o favicon redondo */
+      link[rel="icon"] {
+          border-radius: 50%;
+      }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrizes - Bem-vindo</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: linear-gradient(to right, #4CAF50, #87CEFA);
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          overflow-x: hidden;
+      }
+
+      header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          background-color: #333;
+          color: white;
+      }
+
+      header .logo {
+          font-size: 24px;
+          font-weight: bold;
+      }
+
+      nav {
+          display: flex;
+          gap: 15px;
+      }
+
+      nav a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+
+      nav a:hover {
+          background-color: #45a049;
+      }
+
+      main {
+          text-align: center;
+          padding: 20px;
+          flex: 1;
+      }
+
+      h1 {
+          font-size: 2em;
+          margin-bottom: 20px;
+      }
+
+      p {
+          font-size: 1.2em;
+          line-height: 1.6;
+          margin-bottom: 30px;
+      }
+
+      .video-container iframe {
+          width: 100%;
+          max-width: 560px;
+          height: 315px;
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+          text-align: center;
+          padding: 3px;
+          font-size: 12px;
+          background-color: #222;
+          color: white;
+          position: relative;
+          bottom: 0;
+          width: 100%;
+      }
+
+      @media (max-width: 600px) {
+          header {
+              flex-direction: column;
+              text-align: center;
+          }
+
+          nav {
+              flex-direction: column;
+              gap: 10px;
+          }
+
+          h1 {
+              font-size: 1.5em;
+          }
+
+          p {
+              font-size: 1em;
+          }
+      }
+  </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Matrizes</div>
+        <nav>
+            <a href="definicao.html">Definição</a>
+            <a href="representacao.html">Representação</a>
+            <a href="operacoes.html">Operações</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bem-vindo ao Estudo das Matrizes</h1>
+        <p>Explore o fascinante mundo das matrizes! Aqui você pode aprender sobre conceitos e aplicações.</p>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/kDr1CdPuVXo?start=105" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MathWeb. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

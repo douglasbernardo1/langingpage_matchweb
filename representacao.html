@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #4CAF50, #87CEFA);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        main {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px 0;
+        }
+
+        section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #222;
+            color: white;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                width: 95%;
+            }
+
+            section p {
+                font-size: 1em;
+            }
+
+            nav a {
+                padding: 8px 15px;
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                font-size: 18px;
+            }
+
+            section p {
+                font-size: 0.9em;
+                padding: 10px;
+            }
+
+            nav a {
+                padding: 5px 10px;
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Representação de Matrizes
+    </header>
+
+    <main>
+        <section>
+            <h1>Matriz Genérica</h1>
+            <img src="https://s3.static.brasilescola.uol.com.br/be/2020/02/matriz-generica.jpeg" alt="Matriz Genérica">
+            <p>Uma matriz genérica é utilizada para representar as relações entre elementos posicionados em linhas e colunas, sendo simbolizada por letras maiúsculas como A, B ou C.</p>
+        </section>
+
+        <section>
+            <h1>Exemplo de Representação</h1>
+            <img src="https://s4.static.brasilescola.uol.com.br/be/2020/02/matrizes-exemplo-representacao.jpeg" alt="Exemplo de Representação de Matriz">
+            <p>Neste exemplo, observamos como os elementos de uma matriz podem ser representados de maneira visual, organizados em linhas e colunas.</p>
+        </section>
+
+        <section>
+            <h1>Diagonal Principal e Secundária</h1>
+            <img src="https://s4.static.brasilescola.uol.com.br/be/2020/02/matriz-diagonal-principal-secundaria.jpeg" alt="Matriz com Diagonal Principal e Secundária">
+            <p>As diagonais de uma matriz são formadas pelos elementos que seguem direções específicas: a diagonal principal vai do canto superior esquerdo ao inferior direito, e a secundária vai do canto superior direito ao inferior esquerdo.</p>
+        </section>
+
+        <nav>
+            <a href="index.html">Voltar para a Página Inicial</a>
+        </nav>
+    </main>
+
+    <footer>
+        &copy; 2025 MathWeb. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
