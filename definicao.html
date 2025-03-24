@@ -18,10 +18,12 @@
         }
 
         header {
+            
+            position: auto;
+            margin: auto;
             width: 100%;
             background-color: #333;
             color: white;
-            padding: 10px 0;
             text-align: center;
             font-size: 24px;
             font-weight: bold;
@@ -57,33 +59,39 @@
         }
 
         nav {
-            text-align: center;
-            margin-top: 20px;
-        }
+          display: flex;
+          gap: 15px;
+          justify-content: center;
+          align-items: center;
+          margin: 15px;
+      }
 
-        nav a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            border-radius: 5px;
-            transition: background-color 0.3s, transform 0.2s;
-        }
+      nav a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+          text-align: center;
+      }
 
-        nav a:hover {
-            background-color: #45a049;
-            transform: scale(1.05);
-        }
+      nav a:hover {
+          background-color: #45a049;
+      }
+
 
         footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #222;
-            color: white;
-            width: 100%;
-            font-size: 12px;
-        }
+          text-align: center;
+          padding: auto;
+          font-size: 12px;
+          background-color: #222;
+          color: white;
+          position: relative;
+          bottom: 0;
+          width: 100%;
+      }
 
         @media (max-width: 768px) {
             main {
@@ -119,15 +127,20 @@
 </head>
 <body>
     <header>
-        Definição de Matrizes
+        <div class="logo">Definição</div>
+        <nav>
+            <a href="quiz.html">Questionário</a>
+            <a href="representacao.html">Representação</a>
+            <a href="operacoes.html">Operações</a>
+        </nav>
     </header>
 
     <main>
         <section>
             <h1>Matriz e sua Ordem</h1>
-            <img src="https://s3.static.brasilescola.uol.com.br/be/2020/02/matriz-ordem.jpg" alt="Exemplo de Matriz e Ordem">
             <p>A ordem de uma matriz é definida pelo número de linhas e colunas que ela possui. Por exemplo, uma matriz de ordem 2x3 possui 2 linhas e 3 colunas.</p>
-        </section>
+            <img src="https://s3.static.brasilescola.uol.com.br/be/2020/02/matriz-ordem.jpg" alt="Exemplo de Matriz e Ordem">
+                    </section>
 
         <section>
             <h1>Exemplo de Matriz</h1>
