@@ -8,15 +8,29 @@
     <link rel="icon" href="faviconM.png" type="image/x-icon">
 </head>
 <body>
-    <header>
+    
+    <div class="sub_menu">
+        <a class="click" href="#primeiroh2">Quetão 1</a>
+        <a class="click" href="#q2">Quetão 2</a>
+        <a class="click" href="#q3">Quetão 3</a>
+        <a class="click" href="#q4">Quetão 4</a>
+        <a class="click" href="#q5">Quetão 5</a>
+    </div>
 
-        <div class="logo">Questionário</div>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo_img" src="faviconM.png" alt="">
+            </a>
+            Questionário</div>
         <nav>
-            <a href="respquiz.html">Respostas</a>
             <a href="definicao.html">Definição</a>
             <a href="representacao.html">Representação</a>
+            <a href="categorias.html">Categorias</a>
             <a href="operacoes.html">Operações</a>
+            <a href="respquiz.html">Respostas</a>
         </nav>
+
     </header>
     <main>
         <section>
@@ -38,7 +52,7 @@
 
             </form>
             
-            <h2>Em que situação, há igualdade de matrizes?</h2>
+            <h2 id="q2">Em que situação, há igualdade de matrizes?</h2>
             
             <form>
                 <input type="radio" value="Duas matrizes são iguais se, e somente se, todos os elementos correspondentes forem iguais" id="p2a" name="Pergunta 2">
@@ -55,7 +69,7 @@
 
             </form>
             
-            <h2>Considere duas matrizes A e B de dimenções 3 x 3.Qual operação retorna o elemento correspondente da posição A[2][3] + B[2][3]?</h2>
+            <h2 id="q3">Considere duas matrizes A e B de dimenções 3 x 3.Qual operação retorna o elemento correspondente da posição A[2][3] + B[2][3]?</h2>
             
             <form>
                 
@@ -72,7 +86,7 @@
                 <label for="p3d">Divisão de Matrizes A / B</label>
             </form>
 
-        <h2>Qual é a definição correta da diagonal principal de uma matriz quadrada?</h2>
+        <h2 id="q4">Qual é a definição correta da diagonal principal de uma matriz quadrada?</h2>
         <form>
             <input type="radio" value="É o conjunto de elementos localizados no canto inferior direito da matriz." id="p4a" name="Pergunta 4">
             <label for="p4a">É o conjunto de elementos localizados no canto inferior direito da matriz.</label> <br>
@@ -86,7 +100,8 @@
             <input type="radio" value="É o conjunto de elementos cuja posição possui o mesmo índice para linha e coluna (i = j)." id="p4d" name="Pergunta 4">
             <label for="p4d">É o conjunto de elementos cuja posição possui o mesmo índice para linha e coluna (i = j).</label>
         </form>
-        <h2>Qual é a condição necessária para que duas matrizes possam ser multiplicadas?</h2>
+
+        <h2 id="q5">Qual é a condição necessária para que duas matrizes possam ser multiplicadas?</h2>
         <form>
             <input type="radio" value="Ambas as matrizes devem ser quadradas." id="p5a" name="Pergunta 5">
             <label for="p5a">Ambas as matrizes devem ser quadradas.</label> <br>
@@ -104,7 +119,9 @@
               <nav>
                   <a id="binferiror" href="index.html">Voltar a página inicial</a>
               </nav>
-        
+              <footer>
+                &copy; 2025 MathWeb. Todos os direitos reservados.
+            </footer>
         
     </main>
 </body>

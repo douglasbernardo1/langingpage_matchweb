@@ -8,39 +8,74 @@
     <link rel="icon" href="faviconM.png" type="image/x-icon">
 </head>
 <body>
+    <div class="sub_menu">
+        <a class="click" href="#primeiroh1">Operações</a>
+        <a class="click" href="#adicao">Adição</a>
+        <a class="click" href="#subtracao">Subtração</a>
+        <a class="click" href="#multi_real">Multiplicação por número real</a>
+        <a class="click" href="#multi">Multiplicação</a>
+    </div>
+
     <header>
-        
-        <div class="logo">Operações</div>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo_img" src="faviconM.png" alt="">
+            </a>
+            Operações
+        </div>
         <nav>
             <a href="definicao.html">Definição</a>
             <a href="representacao.html">Representação</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="operacoes.html">Operações</a>
             <a href="quiz.html">Questionário</a>
         </nav>
     </header>
-
     <main>
+    <section>
+        <h1 id="primeiroh1"> Operações com matrizes</h1>
+
+        <p>Existem quatro tipos de operações que podem ser feitas entre matrizes, sendo elas: adição, subtração, multiplicação e multiplicação por número real. Vamos ver agora como executar cada uma delas. (A divisão de matrizes não existe diretamente, mas podemos usar a inversa da matriz ou a pseudoinversa para resolver problemas que envolvem a ideia de divisão.)</p>
+    </section>
+
         <section>
-            <h1 id="primeiroh1">Elemento Correspondente</h1>
-            <p>Os elementos correspondentes de duas matrizes estão localizados na mesma linha e coluna em ambas. No exemplo, os números 14 e -14 ocupam a mesma posição, pertencendo a matrizes opostas.</p>
-            <img src="https://s5.static.brasilescola.uol.com.br/be/2020/02/matriz-oposta-elemento-correspondente.jpeg" alt="Matriz Oposta e Elemento Correspondente">
+            <h1 id="adicao">Adição</h1>
+            <p>Para que seja possível somar duas matrizes, é necessário primeiro que elas sejam do mesmo tipo, ou seja, que tenham o mesmo número de linhas e colunas. A adição é feita a partir da soma dos elementos que ocupam as mesmas posições. <br> <br> Exemplo:</p>
+            <img class="img_localizacao" src="img/adicao-exemplo.png" alt="Matrizes em Operações de Adição e Subtração">
+            <img class="img_localizacao" src="img/soma-de-matrizes-2.png" alt="">
         </section>
 
         <section>
-            <h1>Igualdade de Matrizes</h1>
-            <p>Duas matrizes são iguais se, e somente se, todos os elementos correspondentes forem iguais. Este exemplo demonstra como identificar elementos iguais em matrizes.</p>
-            <img src="https://s3.static.brasilescola.uol.com.br/be/2020/02/matriz-igualdade.jpeg" alt="Exemplo de Igualdade de Matrizes">
+            <h1 id="subtracao">Subtração</h1>
+            <p>Da mesma forma que a adição, na subtração basta subtrair os elementos que estão na mesma posição. Mas cuidado, a ordem em que você executa a operação irá mudar o sinal dos seus resultados, ou seja, sendo duas matrizes A e B, A – B é diferente de B – A.<br> <br> Exemplo:</p>
+            <img class="img_localizacao" src="img/subtracao-de-matrizes-1.png" alt="Matrizes em Operações de Adição e Subtração">
+            <img class="img_localizacao" src="img/subtracao-de-matrizes-2.png" alt="">
         </section>
 
         <section>
-            <h1>Adição e Subtração</h1>
-            <p>A adição e subtração de matrizes envolvem somar ou subtrair os elementos correspondentes. Este exemplo ilustra como realizar essas operações.</p>
-            <img src="https://s5.static.brasilescola.uol.com.br/be/2020/02/matriz-adicao-subtracao.jpeg" alt="Matrizes em Operações de Adição e Subtração">
+            <h1 id="multi_real">Multiplicação por número real</h1>
+                <P>
+                    Multiplicar uma matriz por um número real qualquer é bem simples, basta pegar esse número e multiplicar por todos os elementos da matriz, gerando assim, uma nova matriz. Exemplo:
+                </P>
+
+                <img class="img_localizacao" src="img/multiplicacao-por-numero-real-1.png" alt="">
+                <img class="img_localizacao" src="img/multiplicacao-por-numero-real-2.png" alt="">
         </section>
 
         <section>
-            <h1>Multiplicação</h1>
-            <p>A multiplicação de matrizes só é possível se o número de colunas da primeira matriz for igual ao número de linhas da segunda. Esta imagem ilustra essa condição.</p>
-            <img src="https://s5.static.brasilescola.uol.com.br/be/2020/02/matriz-condicao-multiplicacao.jpg" alt="Condições para Multiplicação de Matrizes">
+            <h1 id="multi">Multiplicação</h1>
+            <p>Até agora, vimos que as operações de adição e subtração não tem diferença alguma em relação àquilo que já estamos acostumados a fazer em qualquer conta comum. Porém, com a multiplicação é diferente.
+
+                <p>Primeiro, para que seja possível realizarmos essa operação, temos que observar se o número de linhas da primeira matriz é igual ao número de colunas da segunda, pois esses valores serão a quantidade de linhas e colunas da matriz gerada pela multiplicação. Se isso acontecer, ótimo, podemos multiplicá-las, porém, se essa condição não for atendida, aí não podemos fazer essa operação.</p>
+                
+               <p> Hmm, então se for verificado que o número de colunas de uma matriz é igual ao número de linhas da outra, basta então fazer a multiplicação normal, certo? Não, a regra aqui é um pouco diferente.</p> 
+                
+                <p>Em uma multiplicação de matrizes, devemos multiplicar os elementos da linha da primeira matriz pelos elementos da coluna da segunda matriz e somar esses produtos. Por exemplo, se tivermos duas matrizes A3x2 e B2x3, multiplicamos o 1° elemento da linha 1 da matriz A pelo 1° elemento da coluna 1 da matriz B, somamos ao produto do 2° elemento da linha 1 da matriz A pelo 2° elemento da coluna 1 da matriz B e assim por diante.</p>
+                
+                <p>Lendo pode parecer um pouco confuso e complicado, mas não é tanto assim, vamos ver um exemplo para deixar tudo mais fácil:</p>
+            <img class="img_localizacao" src="img/multiplicacao-de-matrizes-1.png" alt="Multiplicação de Matrizes">
+            <img class="img_localizacao" src="img/multiplicacao-de-matrizes-2.png" alt="multiplicação">
+            <img class="img_localizacao_02" src="img/multiplicacao-de-matrizes-3-300x189.png" alt="">
         </section>
 
         <nav>

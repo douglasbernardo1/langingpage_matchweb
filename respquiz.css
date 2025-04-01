@@ -19,16 +19,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0.8%;
     background-color: #333;
     color: white;
+    margin-left: 0%;
+    padding-left: 0%;
+
 }
 
-header .logo {
+.logo {
 
     padding-left: 20px;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 main {
@@ -53,7 +58,7 @@ main {
 
 #primeiroh2{
 
-    padding-top: 10%
+    padding-top: 13%
 }
 section {
     margin-bottom: 40px;
@@ -109,6 +114,34 @@ h1{
     font-size: 30px;
 }
 
+.sub_menu{
+    text-align: center;
+    background-color: #4CAF50;
+    margin-top: 6.6%;
+    width: 100%;    
+    align-items: center;
+    position: fixed;
+    padding: 7px 0px 5px 0px;
+}
+
+.click{
+    text-decoration: none;
+    color: white;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.click:hover{
+    color: #87CEFA;
+}
+
+
+.logo_img{
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
+}
+
 @media (max-width: 768px) {
     main {
         width: 95%;
@@ -122,6 +155,15 @@ h1{
         padding: 8px 15px;
         font-size: 0.9em;
     }
+    
+    .sub_menu{
+        padding-top: 50px;
+    }
+
+    #primeiroh2{
+        padding-top: 20%;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -138,4 +180,13 @@ h1{
         padding: 5px 10px;
         font-size: 0.8em;
     }
+    
+    .sub_menu{
+        padding-top: 50px;
+    }
+
+    #primeiroh2{
+        padding-top: 20%;
+    }
+
 }

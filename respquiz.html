@@ -7,12 +7,28 @@
     <link rel="stylesheet" href="respquiz.css">
     <link rel="icon" href="faviconM.png">
 </head>
-<body>
+<body>  
+
+    <div class="sub_menu">
+        <a class="click" href="#primeiroh2">Resposta 1</a>
+        <a class="click" href="#resposta2">Resposta 2</a>
+        <a class="click" href="#resposta3">Resposta 3</a>
+        <a class="click" href="#resposta4">Resposta 4</a>
+        <a class="click" href="#resposta5">Resposta 5</a>
+    </div>
+
     <header>
-        <div class="logo">Respostas</div>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logo_img" src="faviconM.png" alt="">
+            </a>
+            Respostas
+        </div>
+        
         <nav>
             <a href="definicao.html">Definição</a>
             <a href="representacao.html">Representação</a>
+            <a href="categorias.html">Categorias</a>
             <a href="operacoes.html">Operações</a>
             <a href="quiz.html">Questionário</a>
         </nav>
@@ -35,7 +51,7 @@
 
             </form>
             
-            <h2>Em que situação, há igualdade de matrizes?</h2>
+            <h2 id="resposta2">Em que situação, há igualdade de matrizes?</h2>
             
             <form>
 
@@ -52,7 +68,7 @@
 
             </form>
             
-            <h2>Considere duas matrizes A e B de dimenções 3 x 3.Qual operação retorna o elemento correspondente da posição A[2][3] + B[2][3]?</h2>
+            <h2 id="resposta3">Considere duas matrizes A e B de dimenções 3 x 3.Qual operação retorna o elemento correspondente da posição A[2][3] + B[2][3]?</h2>
             
             <form>
                 
@@ -69,7 +85,7 @@
                 <label for="p3d"class="RE">Divisão de Matrizes A / B</label>
             </form>
 
-        <h2>Qual é a definição correta da diagonal principal de uma matriz quadrada?</h2>
+        <h2 id="resposta4">Qual é a definição correta da diagonal principal de uma matriz quadrada?</h2>
         <form>
             
             <div> <label for="p4a"class="RE">É o conjunto de elementos localizados no canto inferior direito da matriz.</label></form></div> <br>
@@ -82,7 +98,8 @@
             
             <label for="p4d"class="RC">É o conjunto de elementos cuja posição possui o mesmo índice para linha e coluna (i = j).</label>
         </form>
-        <h2>Qual é a condição necessária para que duas matrizes possam ser multiplicadas?</h2>
+
+        <h2 id="resposta5">Qual é a condição necessária para que duas matrizes possam ser multiplicadas?</h2>
         <form>
            
             <label for="p5a"class="RE">Ambas as matrizes devem ser quadradas.</label> <br>

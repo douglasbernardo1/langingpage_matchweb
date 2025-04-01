@@ -1,6 +1,3 @@
-
-
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -19,16 +16,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0.8%;
     background-color: #333;
     color: white;
+    margin-left: 0%;
+    padding-left: 0%;
 }
 
-header .logo {
-
+.logo {
     padding-left: 20px;
     font-size: 24px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    
 }
 
 main {
@@ -41,9 +42,8 @@ main {
 }
 
 #primeiroh1{
-
     padding-top: 10%;
-}
+}   
 
 section {
     margin-bottom: 40px;
@@ -59,23 +59,30 @@ section p {
 
 #binferiror {
     display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-  margin: 15px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 13px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav {
     
-    padding-right: 20px;
+  padding-right: 20px;
   display: flex;
   gap: 15px;
   justify-content: center;
   align-items: center;
   margin: 15px;
+  
 }
 
-nav a {
+.nav_bot a {
   text-decoration: none;
   color: white;
   font-weight: bold;
@@ -87,7 +94,7 @@ nav a {
 }
 
 
-nav a:hover {
+.nav_bot a:hover {
     background-color: #45a049;
     transform: scale(1.05);
 }
@@ -102,10 +109,51 @@ footer {
 }
 
 h1{
-    display: inline-block;
-    color: #008080;
     text-align: center;
-    font-size: 30px;
+    font-size: 30px; 
+
+}
+
+.sub_menu{
+    text-align: center;
+    background-color: #4CAF50;
+    margin-top: 6.6%;
+    width: 100%;    
+    align-items: center;
+    position: fixed;
+    padding: 7px 0px 5px 0px;
+}
+
+.click{
+    text-decoration: none;
+    color: white;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.click:hover{
+    color: #87CEFA;
+}
+
+.bloco_header{
+    margin: 0%;
+    padding: 0%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.img_localizacao{
+    display: block; 
+    margin: auto;
+    width: 200px;
+    height: auto;
+}
+
+.logo_img{
+    width: 40px;
+    height: auto;
+    margin-right: 5px;
 }
 
 @media (max-width: 768px) {
@@ -121,6 +169,11 @@ h1{
         padding: 8px 15px;
         font-size: 0.9em;
     }
+
+    .sub_menu{
+        padding-top: 50px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -137,9 +190,9 @@ h1{
         padding: 5px 10px;
         font-size: 0.8em;
     }
+
+    .sub_menu{
+        padding-top: 50px;
+    }
 }
 
-.sub_menu{
-    background-color: black;
-    padding-top: 4.5%;
-}
